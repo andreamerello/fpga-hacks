@@ -117,7 +117,7 @@ tput sgr0
 colorecho $GREEN -en "Firing ISE workflow. Synthesys for project:\040"
 colorecho $GREEN$UNDERLINE $PROJ_NAME
 
-run "Synthesys" "xst" xst -intstyle xflow -ifn $XST_FILE -ofn $LOG_DIR/xst_ext.log
+run "Synthesis" "xst" xst -intstyle xflow -ifn $XST_FILE -ofn $LOG_DIR/xst_ext.log
 mv *.ngc $OUT_DIR
 
 run "Translate" "translate" ngdbuild -intstyle xflow -dd _ngo -nt timestamp -uc $UCF_FILE -p $PART $OUT_PREFIX.ngc $OUT_PREFIX.ngd
@@ -133,4 +133,4 @@ run "Post-Place & Route Static Timing" "trce" trce -intstyle xflow -v 3 -s 4 -n 
 run "Generating bitstream" "bitgen" bitgen -intstyle xflow -f $UT_FILE $OUT_PREFIX.ncd
 
 echo ""
-colorecho $GREEN "Design synthesys COMPLETED !"
+colorecho $GREEN "Design synthesis COMPLETED !"
