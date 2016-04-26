@@ -24,16 +24,16 @@ Getting rid of FSBL
 We have an alternative to the FSBL: recent u-boot ships with a so-called *SPL* (Secondary Program Loader)
 
 The SPL:
-    - can run without DDR
-    - will configure the DDR controller
-    - will configure PADS
-    - will access the SD in order to fetch actual u-boot and run it!
+- can run without DDR
+- will configure the DDR controller
+- will configure PADS
+- will access the SD in order to fetch actual u-boot and run it!
 
 We don't need anymore the Xilinx EDK. The system can be booted *almost* without any Xilinx stuff.
 
 The FPGA can be either
-    - programmed by u-boot
-    - programmed after-boot from Linux
+- programmed by u-boot
+- programmed after-boot from Linux
 
 However, configuration for the DDR controller (board dependant!) and for PADS must be
 supplied to the SPL.
@@ -50,5 +50,5 @@ Booting with the SPL
 - configure u-boot (*make ARCH=arm CROSS-COMPILE=arm-none-eabi- zynq-zturn-defconfig*)
 - make u-boot (*make ARCH=arm CROSS-COMPILE=arm-none-eabi-*)
 - copy spl/boot.bin onto the SD (warning, you could have actually *BOOT*.bit instead..)
-- copy u-boot.img onto the SD (warning, don't know why, I had to rename it it *u-boot-dtb.img*
+- copy u-boot.img onto the SD (warning, don't know why, I had to rename it it *u-boot-dtb.img*)
 - copy u-boot.dtb onto the SD.
