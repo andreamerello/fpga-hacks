@@ -14,7 +14,7 @@ How I run my zturn myir board
 - For the FPGA design, I refer to my workmate Francesco stuff [https://github.com/francescodiotalevi/projects/tree/master/P2012_07_XZy/zturn] my fork [https://github.com/andreamerello/projects/blob/master/P2012_07_XZy/zturn/README.md]
 
 Note: I don't load any bitstream on the FPGA at boot time. I want to do it later, from the OS, but I didn't tried it yet.
-Boot without bitstream is possible, and the following peripherals works:
+Boot without bitstream is possible, and the following peripherals work:
 - USB
 - Ethernet
 - SD card

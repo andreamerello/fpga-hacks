@@ -24,10 +24,9 @@ Zynq
 
 I have also a Zynq-based myir zturn board.
 
-All I wrote about spartan applies also here (substitute ISE with Vidado..)
+All I wrote about spartan applies also here (substitute ISE with Vivado..)
 
 However I am able to restrict Vivado usage only to FPGA design, while booting
 the ARM core is possible without the Xilinx EDK :)
-(see in *zynq* subdir)
 
 If you are interested, you may give a look here [https://github.com/andreamerello/fpga-hacks/tree/master/zynq]
