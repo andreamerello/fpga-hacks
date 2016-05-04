@@ -24,7 +24,6 @@ Boot without bitstream is possible, and the following peripherals work:
 - USB
 - Ethernet
 - SD card
-- LEDs
 - CAN (not tested)
 - console USB/UART
 
@@ -40,3 +39,4 @@ I have not checked if the following peripherals could work:
 - QSPI memory
 - buzzer
 - button
+- LEDs
